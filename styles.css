@@ -1,0 +1,735 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.main {
+    width: 100%;
+    height: 60px;
+    border: 3px red transparent;
+}
+
+.main .box {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    float: left;
+
+
+}
+
+ 
+
+
+
+.main .box .child h1 {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.main .diba {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    float: right;
+}
+
+.main .diba .child {
+    display: flex;
+    justify-content: start;
+
+
+
+}
+
+.main .diba .child h1 {
+    font-weight: 400;
+    font-size: 20px;
+    border-right: 1px black solid;
+    padding-right: 09px;
+
+}
+
+.main .diba .child img {
+    width: 40px;
+    height: 40px;
+    transition: 0.9s;
+
+
+}
+
+.main .diba .child img:hover {
+    transform: rotate(360deg);
+}
+
+.parent {
+    width: 100%;
+    height: 150px;
+    border: 1px red transparent;
+    display: flex;
+
+
+
+
+}
+
+.parent .child1 {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.parent .child1 img {
+    width: 380px;
+    height: 80px;
+}
+
+
+.parent .child2 {
+    width: 60%;
+    height: inherit;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.parent .child2 a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 1s;
+
+
+}
+
+.parent .child2 a:hover {
+    color: red;
+}
+
+.parent .child3 {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: inherit;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.parent .child3 img {
+
+
+    width: 50px;
+}
+
+.first {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.first h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+
+}
+
+.first h1::after {
+    content: "Shop Now";
+    color: rgb(215, 180, 20);
+    text-decoration: underline;
+    font-size: 20px;
+    transition: 2s;
+
+}
+
+.first h1:hover::after {
+    transform: scale(3);
+}
+
+
+
+
+
+
+
+
+
+.second {
+    width: 100%;
+    height: 900px;
+    border: 3px red solid;
+    background-image: url(bgimg1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+
+
+
+}
+
+.second .one h1 {
+    font-size: 60px;
+    font-family: "Oleo Script", serif;
+    color: red;
+    font-weight: 100;
+    margin-top: 280px;
+    margin-right: 780px;
+}
+
+.second .two h1 {
+    font-size: 80px;
+    font-weight: 600;
+    color: black;
+    margin-right: 500px;
+
+}
+
+.second .three h1 {
+    font-size: 25px;
+    margin-right: 550px;
+    margin-bottom: 20px;
+    font-weight: 290;
+}
+
+.second .four {
+    height: 100px;
+    background-color: black;
+    width: 190px;
+    border: 1px black solid;
+    margin-right: 800px;
+}
+
+.second .four h1 {
+    font-size: 30px;
+    border: 1px black solid;
+    color: white;
+
+    text-align: center;
+    line-height: 100px;
+    font-weight: 300;
+
+
+
+}
+
+.second .four h1:hover {
+    background-color: white;
+    color: black;
+}
+
+.fourth {
+    width: 100%;
+    height: 530px;
+    padding-inline: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border: 1px red transparent;
+    ;
+}
+
+.fourth .one img {
+    width: auto;
+    height: 490px;
+}
+
+.fourth .one h1 {
+    margin-left: 210px;
+}
+
+
+
+
+
+
+
+.navbar {
+    width: 100%;
+
+    height: 130px;
+    border: 2px red transparent;
+    padding-inline: 5%;
+    display: flex;
+}
+
+.navbar .navleft {
+    width: 50%;
+    height: inherit;
+    border: 2px red transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar .navleft h1 {
+    font-size: 60px;
+    font-weight: 400;
+
+}
+
+.navbar .navright {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: inherit;
+    border: 2px red transparent;
+}
+
+.navbar .navright a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.navbar .navright a:hover {
+    border-bottom: 2px red solid;
+}
+
+.navbar .navright a #firstname {
+    color: red;
+}
+
+#firstname {
+    color: red;
+}
+
+.sixth {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: 4px red solid;
+    gap: 40px;
+}
+
+.sixth.one {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+
+
+}
+
+.sixth .one img {
+    width: 400px;
+    height: 500px;
+    transition: 2s;
+}
+
+.sixth .one h1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.sixth .one h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 140px;
+    color: gray;
+    float: left;
+
+}
+
+.sixth .one del {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(202, 150, 47);
+}
+
+.sixth .one img:hover {
+    transform: scale(2);
+    
+}
+
+.sixth .one h1:hover {
+    color: red;
+}
+
+.eight {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(243, 234, 216);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.eight h1 {
+    padding-top: 30px;
+    font-size: 50px;
+    font-weight: 500;
+
+
+}
+
+.eight h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.eight .one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.eight .one .hello {
+    margin-right: 30px;
+
+}
+
+.eight .one .hello img {
+    width: 100%;
+    height: 100px;
+}
+
+.eight .one .hello h1 {
+    font-size: 30px;
+
+}
+
+.eight .one .text h1 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.eight .one .text h2 {
+    font-size: 20px;
+
+}
+
+.nine {
+    height: 90px;
+    width: 100%;
+    border: 4px red solid;
+}
+
+.nine h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.ten {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: 4px red solid;
+    gap: 40px;
+}
+
+.ten.one {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+
+
+}
+
+.ten .one img {
+    width: 400px;
+    height: 500px;
+    transition: 2s;
+}
+
+.ten .one h1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.ten .one h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 140px;
+    color: gray;
+    float: left;
+
+}
+
+.ten .one del {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(202, 150, 47);
+}
+
+.ten .one img:hover {
+    transform: scale(2);
+    
+}
+
+.ten .one h1:hover {
+    color: red;
+}
+
+.eleven {
+    width: 100%;
+    height: 450px;
+    border: 4px red solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    padding-inline: 5%;
+}
+
+.eleven .one {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+    border-right: 1px black solid;
+
+}
+
+.eleven .one img {
+    width: 20%;
+    height: 200px;
+
+}
+
+#secondname {
+    border: none;
+}
+
+.eleven .one h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.eleven .one h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.twelve {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    border: 3px red solid;
+    padding-inline: 5%;
+    display: flex;
+}
+
+.twelve .one {
+    height: inherit;
+    width: 30%;
+    border: 3px blueviolet solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.twelve .two {
+    border: 3px blue solid;
+    height: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.twelve .three {
+    border: 3px blue solid;
+    height: inherit;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.twelve .one h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.twelve .one h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.twelve .two input {
+    height: 80px;
+    width: 40%;
+    font-size: 25px;
+    padding-left: 30px;
+    text-align: left;
+    font-weight: 500;
+    color: black;
+
+}
+
+.twelve .two h2 {
+    background-color: red;
+    color: white;
+    height: 80px;
+    width: 25%;
+    text-align: center;
+    line-height: 80px;
+
+}
+
+#thirdname {
+    height: 50px;
+    width: 50px;
+}
+
+.thirteen {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    border: 3px red solid;
+    padding-inline: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.thirteen .two {
+    width: 20%;
+    height: 500px;
+    border: 3px blueviolet transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    ;
+
+}
+
+.thirteen .two img {
+    width: 60px;
+    height: 60px;
+}
+
+.thirteen .two h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.thirteen .two h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+.thirteen .one {
+    width: 20%;
+    height: 500px;
+    border: 3px blueviolet transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-left: 40px
+}
+
+.thirteen .one h1 {
+    font-size: 30px;
+    color: white;
+
+
+}
+
+.thirteen .one h2 {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+
+}
+
+#fourthname {
+    margin-top: 50px;
+}
+
+.thirteen .three h1 {
+    color: rebeccapurple;
+}
+
+.fourteen {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border: 2px red transparent;
+}
+
+.fourteen h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
