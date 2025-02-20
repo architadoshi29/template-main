@@ -5,77 +5,67 @@
     font-family: "Poppins", serif;
 }
 
-.main {
+.main{
     width: 100%;
     height: 60px;
-    border: 3px red transparent;
-}
+    border: 4px red transparent ;
+    display: flex;
 
-.main .box {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5%;
+}
+.main .boxleft{
     width: 50%;
     height: inherit;
+    border: 3px  red transparent;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
-    float: left;
+    gap: 30px;
 
 
 }
-
- 
-
-
-
-.main .box .child h1 {
-    font-size: 20px;
+.main .boxleft h3{
+    font-size: 16px;
     font-weight: 400;
 
 }
 
-.main .diba {
+
+
+
+
+.main  .boxcenter{
     width: 50%;
     height: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    float: right;
-}
+   border: 3px red transparent;
 
-.main .diba .child {
-    display: flex;
-    justify-content: start;
+   display: flex;
+   flex-direction: row;
 
+justify-content: center;
+align-items: center; 
+gap: 60px; 
 
 
 }
-
-.main .diba .child h1 {
+.main  .boxcenter h1{  
     font-weight: 400;
-    font-size: 20px;
-    border-right: 1px black solid;
-    padding-right: 09px;
-
+    font-size: 16px;
+    border-right: 2px solid black;
+ padding-right: 10px;
 }
 
-.main .diba .child img {
-    width: 40px;
-    height: 40px;
-    transition: 0.9s;
-
-
-}
-
-.main .diba .child img:hover {
-    transform: rotate(360deg);
-}
 
 .parent {
     width: 100%;
     height: 150px;
     border: 1px red transparent;
     display: flex;
+    padding-inline: 5%;
 
 
 
@@ -87,7 +77,7 @@
     height: inherit;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
 
 
@@ -104,8 +94,9 @@
     height: inherit;
     flex-direction: row;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 
@@ -132,6 +123,7 @@
     justify-content: start;
     align-items: center;
     gap: 20px;
+    position: relative;
 
 
 }
@@ -139,9 +131,22 @@
 .parent .child3 img {
 
 
+
+
     width: 50px;
 }
-
+.parent .child3 a{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 250px;
+    top: 40px;}
 .first {
     width: 100%;
     height: 60px;
@@ -164,13 +169,11 @@
     color: rgb(215, 180, 20);
     text-decoration: underline;
     font-size: 20px;
-    transition: 2s;
+    transition: 1s;
 
 }
+ 
 
-.first h1:hover::after {
-    transform: scale(3);
-}
 
 
 
@@ -183,7 +186,7 @@
 .second {
     width: 100%;
     height: 900px;
-    border: 3px red solid;
+    border: 3px red transparent;
     background-image: url(bgimg1.jpg);
     background-size: cover;
     display: flex;
@@ -223,13 +226,13 @@
     height: 100px;
     background-color: black;
     width: 190px;
-    border: 1px black solid;
+    border: 1px black transparent;
     margin-right: 800px;
 }
 
 .second .four h1 {
     font-size: 30px;
-    border: 1px black solid;
+    border: 1px black transparent;
     color: white;
 
     text-align: center;
@@ -245,32 +248,111 @@
     color: black;
 }
 
-.fourth {
+.fourth{
+   border: 3px red solid;
+    height: 610px;
     width: 100%;
-    height: 530px;
-    padding-inline: 5%;
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    border: 1px red transparent;
-    ;
+    display: flex;
+gap: 40px;
+padding-inline: 5%;
+
 }
 
-.fourth .one img {
-    width: auto;
-    height: 490px;
+.fourth .box{
+    background-color: red;
+    height: 600px;
+    width: 30%;
+    overflow: hidden;
+    
+}
+.fourth .box .img1{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 2s;
+    background-image: url(items1.jpg);-webkit-box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
+    -moz-box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
+    box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
 }
 
-.fourth .one h1 {
-    margin-left: 210px;
+.fourth .box .img2{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 2s;-webkit-box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
+    -moz-box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
+    box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
+    background-image: url(item2.jpg);}
+    .fourth .box .img3{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;-webkit-box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
+        -moz-box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
+        box-shadow: inset 21px -78px 88px 0px rgba(0,0,0,0.67);
+        overflow: hidden;
+        transition: 2s;
+        background-image: url(item3.jpg);}
+.fourth .box:hover h1{
+transform: translateY(-80px);
 }
+.fourth .box:hover .img1{transform: scale(1.2);}
+.fourth .box:hover .img2{transform: scale(1.2);}
+.fourth .box:hover .img3{transform: scale(1.2);}
+    
 
 
 
+.fourth .box h1{
+color: white;
+text-align: center;
+transition: 1s; text-decoration: underline;
+}
+.fourth .box .img{
+color: red;
+font-size: 50px;
+text-align: center;
 
+}
+.fourth .box .img1 span{
+line-height: 900px;font-size: 40px;
 
+transition: 1s; font-weight: 700;
+text-decoration: underline;
+margin-left: 200px;color: white;
+}
+.fourth .box:hover .img1 span{
+   line-height: 800px;
+}
+.fourth .box .img2 span{
+    line-height: 900px;font-size: 40px;
+    
+    transition: 1s; font-weight: 700;
+    text-decoration: underline;
+    margin-left: 200px;color: white;
+    }
+    .fourth .box:hover .img2 span{
+        line-height: 800px;
+     }
 
+    .fourth .box .img3 span{
+        line-height: 900px;font-size: 40px;
+        
+        transition: 1s; font-weight: 700;
+        text-decoration: underline;
+        margin-left: 200px;color: white;
+        }
+
+        .fourth .box:hover .img3 span{
+            line-height: 800px;
+         }
 
 .navbar {
     width: 100%;
@@ -306,6 +388,7 @@
     gap: 50px;
     height: inherit;
     border: 2px red transparent;
+    
 }
 
 .navbar .navright a {
@@ -316,12 +399,11 @@
 }
 
 .navbar .navright a:hover {
-    border-bottom: 2px red solid;
+    border-bottom: 1px red solid;
+    
 }
 
-.navbar .navright a #firstname {
-    color: red;
-}
+
 
 #firstname {
     color: red;
@@ -334,14 +416,14 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    border: 4px red solid;
+    border: 4px red transparent;
     gap: 40px;
 }
 
 .sixth.one {
     display: flex;
 
-    justify-content: center;
+    justify-content: center;overflow: hidden;
     flex-direction: row;
     align-items: center;
 
@@ -352,7 +434,7 @@
 .sixth .one img {
     width: 400px;
     height: 500px;
-    transition: 2s;
+    transition: 2s;overflow: hidden;
 }
 
 .sixth .one h1 {
@@ -378,11 +460,11 @@
 }
 
 .sixth .one img:hover {
-    transform: scale(2);
+    transform: scale(1.2);
     
 }
 
-.sixth .one h1:hover {
+.sixth .one img:hover h1 {
     color: red;
 }
 
@@ -448,7 +530,7 @@
 .nine {
     height: 90px;
     width: 100%;
-    border: 4px red solid;
+    border: 4px red transparent;
 }
 
 .nine h1 {
@@ -464,7 +546,7 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    border: 4px red solid;
+    border: 4px red transparent;
     gap: 40px;
 }
 
@@ -483,7 +565,8 @@
     width: 400px;
     height: 500px;
     transition: 2s;
-}
+
+overflow: hidden;}
 
 .ten .one h1 {
     font-size: 20px;
@@ -508,7 +591,7 @@
 }
 
 .ten .one img:hover {
-    transform: scale(2);
+    transform: scale(1.2);
     
 }
 
@@ -519,7 +602,7 @@
 .eleven {
     width: 100%;
     height: 450px;
-    border: 4px red solid;
+    border: 4px red transparent;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -565,7 +648,7 @@
     width: 100%;
     height: 300px;
     background-color: black;
-    border: 3px red solid;
+    border: 3px red transparent;
     padding-inline: 5%;
     display: flex;
 }
@@ -573,7 +656,7 @@
 .twelve .one {
     height: inherit;
     width: 30%;
-    border: 3px blueviolet solid;
+    border: 3px blueviolet transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -581,7 +664,7 @@
 }
 
 .twelve .two {
-    border: 3px blue solid;
+    border: 3px blue transparent;
     height: inherit;
     width: 50%;
     display: flex;
@@ -592,7 +675,7 @@
 }
 
 .twelve .three {
-    border: 3px blue solid;
+    border: 3px blue transparent;
     height: inherit;
     width: 20%;
     display: flex;
@@ -644,7 +727,7 @@
     width: 100%;
     height: 800px;
     background-color: black;
-    border: 3px red solid;
+    border: 3px red transparent;
     padding-inline: 5%;
     display: flex;
     flex-direction: row;
