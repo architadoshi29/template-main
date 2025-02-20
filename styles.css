@@ -249,7 +249,7 @@ gap: 60px;
 }
 
 .fourth{
-   border: 3px red solid;
+   border: 3px red transparent;
     height: 610px;
     width: 100%;
     flex-direction: row;
